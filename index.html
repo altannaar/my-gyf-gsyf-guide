@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راهنمای صندوق‌های سرمایه‌گذاری ترکیه (GYF و GSYF)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #FDFBF7;
+            color: #3a3a3a;
+        }
+        .rtl {
+            direction: rtl;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800;
+        }
+        .section-subtitle {
+            @apply text-lg md:text-xl text-center text-gray-600 mb-12 max-w-3xl mx-auto;
+        }
+        .tab-button {
+            @apply px-6 py-3 text-lg font-semibold rounded-t-lg transition-colors duration-300;
+        }
+        .tab-button.active {
+            @apply bg-white text-teal-600 border-b-2 border-teal-600;
+        }
+        .tab-button:not(.active) {
+            @apply bg-gray-100 text-gray-600 hover:bg-gray-200;
+        }
+        .tab-content {
+            @apply hidden bg-white p-8 rounded-b-lg rounded-tl-lg shadow-lg;
+        }
+        .tab-content.active {
+            @apply block;
+        }
+        .advantage-item {
+            @apply flex items-start p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow;
+        }
+        .advantage-icon {
+            @apply text-3xl text-teal-500 mr-4 ml-2 flex-shrink-0;
+        }
+        .faq-item {
+            @apply bg-white border border-gray-200 rounded-lg mb-2;
+        }
+        .faq-question {
+            @apply w-full text-right p-5 font-semibold text-gray-800 flex justify-between items-center cursor-pointer hover:bg-gray-50;
+        }
+        .faq-answer {
+            @apply p-5 border-t border-gray-200 text-gray-700 leading-relaxed bg-gray-50;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="rtl">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-teal-700">
+                <a href="#">راهنمای سرمایه‌گذاری</a>
+            </div>
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="#about-funds" class="text-gray-600 hover:text-teal-600 transition-colors">درباره صندوق‌ها</a>
+                <a href="#faq" class="text-gray-600 hover:text-teal-600 transition-colors">سوالات متداول</a>
+                <a href="#contact" class="text-gray-600 hover:text-teal-600 transition-colors">تماس با ما</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#about-funds" class="block py-2 text-gray-600 hover:text-teal-600">درباره صندوق‌ها</a>
+            <a href="#faq" class="block py-2 text-gray-600 hover:text-teal-600">سوالات متداول</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-teal-600">تماس با ما</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-teal-50 py-16 md:py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-teal-800 mb-4">سرمایه‌گذاری هوشمند در ترکیه</h1>
+                <p class="text-xl md:text-2xl text-teal-700 mb-8">آشنایی با صندوق‌های سرمایه‌گذاری GYF و GSYF .</p>
+                <a href="#about-funds" class="bg-teal-600 text-white font-bold py-3 px-8 rounded-full hover:bg-teal-700 transition-transform transform hover:scale-105 text-lg">شروع آشنایی</a>
+            </div>
+        </section>
+
+        <section id="about-funds" class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">آشنایی با صندوق‌های سرمایه‌گذاری ترکیه</h2>
+                <p class="section-subtitle">
+                    صندوق‌های سرمایه‌گذاری در املاک و مستغلات (GYF) و صندوق‌های سرمایه‌گذاری جسورانه (GSYF)، ابزارهای مالی تحت نظارت سازمان بورس ترکیه (SPK) هستند. این صندوق‌ها به سرمایه‌گذاران امکان می‌دهند تا وجوه خود را به صورت تجمیعی و از طریق یک ساختار قانونمند و حرفه‌ای، در پروژه‌های مختلف سرمایه‌گذاری کنند، بدون نیاز به تأسیس شرکت مستقل.
+                </p>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex border-b border-gray-200 mb-6">
+                        <button class="tab-button active" data-tab="gyf-info">صندوق املاک و مستغلات (GYF)</button>
+                        <button class="tab-button" data-tab="gsyf-info">صندوق سرمایه‌گذاری جسورانه (GSYF)</button>
+                    </div>
+                    <div id="gyf-info" class="tab-content active">
+                        <h3 class="text-2xl font-bold mb-4 text-teal-700">صندوق سرمایه‌گذاری در املاک و مستغلات (GYF)</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            GYF (Gayrimenkul Yatırım Fonu) برای سرمایه‌گذاری در انواع دارایی‌های مبتنی بر املاک و مستغلات طراحی شده است. این صندوق‌ها توسط شرکت‌های مدیریت پرتفوی مجاز اداره می‌شوند و حداقل ۸۰٪ دارایی‌هایشان باید در بخش املاک سرمایه‌گذاری شود. GYF راهکاری کارآمد برای سرمایه‌گذاری در بازار املاک ترکیه، با شفافیت و مزایای مالیاتی قابل توجه است.
+                        </p>
+                        <h4 class="font-semibold mt-6 mb-2 text-gray-800">دامنه کاربرد GYF:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>خرید و فروش انواع املاک (مسکونی، تجاری، صنعتی، توریستی).</li>
+                            <li>توسعه پروژه‌های ساختمانی از ابتدا تا انتها.</li>
+                            <li>سرمایه‌گذاری در املاک درآمدزا مانند هتل‌ها، مراکز خرید یا کلینیک‌ها.</li>
+                            <li>تملک و مدیریت حقوق مرتبط با املاک و مستغلات.</li>
+                        </ul>
+                    </div>
+                    <div id="gsyf-info" class="tab-content">
+                        <h3 class="text-2xl font-bold mb-4 text-teal-700">صندوق سرمایه‌گذاری جسورانه (GSYF)</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            GSYF (Girişim Sermayesi Yatırım Fonu) بر سرمایه‌گذاری در شرکت‌ها، کسب‌وکارهای نوپا (استارت‌آپ‌ها) و پروژه‌های عملیاتی با پتانسیل رشد بالا تمرکز دارد. این صندوق‌ها نیز تحت نظارت SPK و توسط شرکت‌های مدیریت پرتفوی حرفه‌ای اداره می‌شوند و فرصتی برای مشارکت در رشد اقتصادی بخش خصوصی ترکیه فراهم می‌کنند.
+                        </p>
+                        <h4 class="font-semibold mt-6 mb-2 text-gray-800">دامنه کاربرد GSYF:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>سرمایه‌گذاری در سهام شرکت‌های خصوصی، استارت‌آپ‌ها و شرکت‌های کوچک و متوسط.</li>
+                            <li>تأمین مالی برای توسعه کارخانجات، پروژه‌های صنعتی و فناوری.</li>
+                            <li>ساختاردهی و سرمایه‌گذاری در کسب‌وکارهای خدماتی نوآورانه.</li>
+                            <li>سرمایه‌گذاری‌های خطرپذیر (Venture Capital) و سهام خصوصی (Private Equity).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-10 border-t border-gray-200">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">مزایای کلیدی سرمایه‌گذاری از طریق صندوق</h3>
+                    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                        <div class="advantage-item">
+                            <span class="advantage-icon">🛡️</span>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">ساختار شفاف و امن</h4>
+                                <p class="text-gray-600 text-sm">نظارت مستقیم SPK، تفکیک دارایی‌ها و حسابرسی منظم.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">💰</span>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">معافیت‌های مالیاتی</h4>
+                                <p class="text-gray-600 text-sm">مزایای قابل توجه در سطح صندوق و برای سرمایه‌گذار.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">💼</span>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">مدیریت حرفه‌ای</h4>
+                                <p class="text-gray-600 text-sm">اداره امور توسط شرکت‌های مدیریت پرتفوی متخصص.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">🇹🇷</span>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">مسیر اخذ شهروندی</h4>
+                                <p class="text-gray-600 text-sm">امکان دریافت شهروندی ترکیه با سرمایه‌گذاری واجد شرایط.</p>
+                            </div>
+                        </div>
+                         <div class="advantage-item">
+                            <span class="advantage-icon">⚙️</span>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">راه‌اندازی آسان‌تر</h4>
+                                <p class="text-gray-600 text-sm">عدم نیاز به تأسیس شرکت مستقل و بروکراسی کمتر.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="advantage-icon">🔄</span>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-800">انعطاف در ورود/خروج</h4>
+                                <p class="text-gray-600 text-sm">از طریق انتقال واحدهای صندوق طبق اساسنامه.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="faq" class="py-16 md:py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">پرسش‌های متداول</h2>
+                <p class="section-subtitle">
+                    پاسخ به برخی از سوالات رایج در مورد صندوق‌های سرمایه‌گذاری GYF و GSYF در ترکیه.
+                </p>
+                <div id="faq-accordion" class="max-w-3xl mx-auto">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">تماس با ما</h2>
+                <p class="section-subtitle">
+                    برای کسب اطلاعات بیشتر و مشاوره تخصصی در زمینه سرمایه‌گذاری از طریق صندوق‌های GYF و GSYF در ترکیه، با ما در تماس باشید.
+                </p>
+                <div class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow-lg">
+                    <p class="text-lg text-gray-700 mb-2"><strong>ایمیل:</strong> <a href="mailto:info [at] artankapital.com" class="text-teal-600 hover:underline">info [at] artankapital.com</a></p>
+                    <p class="text-lg text-gray-700 mb-2"><strong>تلفن:</strong> <a href="tel:+905301002039" class="text-teal-600 hover:underline ltr d-block text-left" dir="ltr">+90 530 100 2039</a></p>
+                    <p class="text-lg text-gray-700 mb-6"><strong>لینکدین:</strong> <a href="https://linkedin.com/in/altannarcfa" target="_blank" rel="noopener noreferrer" class="text-teal-600 hover:underline">linkedin.com/in/altannarcfa</a></p>
+                    <p class="text-md text-gray-600">ما آماده پاسخگویی به سوالات شما و ارائه راهنمایی‌های لازم برای یک سرمایه‌گذاری موفق و امن در ترکیه هستیم.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="current-year"></span> آرتان کاپیتال - کلیه حقوق محفوظ است.</p>
+            <p class="text-sm text-gray-400 mt-2">این وب‌سایت صرفاً جنبه اطلاع‌رسانی دارد و توصیه سرمایه‌گذاری محسوب نمی‌شود. لطفاً قبل از هرگونه تصمیم‌گیری با مشاوران مالی و حقوقی متخصص مشورت نمایید.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Tab functionality
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    button.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Mobile menu
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if(menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // FAQ Data and Accordion
+            const faqData = [
+                {
+                    question: 'سرمایه‌گذاران چگونه از این صندوق‌ها سود کسب می‌کنند؟',
+                    answer: 'سود عمدتاً از دو طریق حاصل می‌شود: ۱) افزایش ارزش واحدهای صندوق (سود سرمایه) که با رشد ارزش دارایی‌های صندوق (املاک یا شرکت‌ها) به دست می‌آید و در زمان فروش واحدها محقق می‌شود. ۲) سود نقدی دوره‌ای (سود تقسیمی) در صورتی که صندوق درآمد جاری (مانند اجاره‌بها یا سود سهام دریافتی) داشته باشد و طبق اساسنامه توزیع شود.'
+                },
+                {
+                    question: 'اگر ارزش سرمایه ۵۰۰ هزار دلاری برای شهروندی، طی ۳ سال کاهش یابد، چه می‌شود؟',
+                    answer: 'قوانین شهروندی معمولاً بر ارزش سرمایه‌گذاری در زمان خرید و تعهد به نگهداری خود دارایی (واحدها) برای ۳ سال تمرکز دارند. نوسانات بازار معمولاً تاثیری بر پروسه شهروندی ندارد، به شرطی که واحدها فروخته نشوند. با این حال، این موضوع بسیار حساس است و اکیداً توصیه می‌شود قبل از اقدام، از طریق وکیل مهاجرت متخصص در ترکیه استعلام دقیق گرفته شود.'
+                },
+                {
+                    question: 'آیا یک صندوق می‌تواند در چندین پروژه سرمایه‌گذاری کند؟',
+                    answer: 'بله، این یکی از مزایای اصلی صندوق‌هاست. طبق مقررات، صندوق‌ها معمولاً ملزم به سرمایه‌گذاری در چندین دارایی یا پروژه مختلف هستند تا ریسک سرمایه‌گذاری توزیع شود. این امر امنیت سرمایه‌گذاری را افزایش می‌دهد.'
+                },
+                {
+                    question: 'چه کسانی می‌توانند در این صندوق‌ها سرمایه‌گذاری کنند؟',
+                    answer: 'سرمایه‌گذاری در این صندوق‌ها محدود به "سرمایه‌گذاران واجد شرایط" (Nitelikli Yatırımcı) است. برای اشخاص حقیقی، رایج‌ترین معیار، داشتن دارایی‌های مالی (مانند سپرده بانکی، سهام، اوراق) به ارزش حداقل ۱ میلیون لیر ترکیه است. نهادهای مالی نیز واجد شرایط محسوب می‌شوند.'
+                },
+                {
+                    question: 'حداقل سرمایه برای تأسیس یک صندوق چقدر است؟',
+                    answer: 'حداقل ارزش پرتفوی یک صندوق GYF (املاک) باید ظرف یک سال به ۱۰ میلیون لیر ترکیه برسد. برای صندوق GSYF (جسورانه)، حداقل مجموع تعهد سرمایه از سوی سرمایه‌گذاران باید به ۵۰ میلیون لیر ترکیه برسد. این مبالغ مربوط به کل سرمایه صندوق است، نه هر سرمایه‌گذار.'
+                },
+                 {
+                    question: 'آیا شرکت مجری پروژه (در GSYF) باید مالیات بدهد؟',
+                    answer: 'بله، اگر پروژه از طریق یک شرکت مجزا اجرا شود که سهام آن متعلق به صندوق GSYF است، آن شرکت باید مالیات بر درآمد خود را بپردازد. مزیت اصلی این است که سودی که پس از پرداخت مالیات، از آن شرکت به خودِ صندوق منتقل می‌شود، دیگر در سطح صندوق مشمول مالیات شرکت‌ها نمی‌شود.'
+                },
+                {
+                    question: 'راهکارهای خروج از سرمایه‌گذاری برای سرمایه‌گذاران چیست؟',
+                    answer: 'راهکارهای اصلی خروج عبارتند از: ۱) بازخرید واحدها توسط مدیر صندوق در زمان انحلال یا دوره‌های بازخرید مشخص شده در اساسنامه. ۲) انتقال (فروش) واحدها به یک سرمایه‌گذار واجد شرایط دیگر در بازار ثانویه، که معمولاً با هماهنگی مدیر صندوق انجام می‌شود.'
+                }
+            ];
+
+            const faqAccordion = document.getElementById('faq-accordion');
+            if (faqAccordion) {
+                faqData.forEach((item) => {
+                    const faqItemDiv = document.createElement('div');
+                    faqItemDiv.className = 'faq-item';
+
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'faq-question';
+                    questionDiv.innerHTML = `
+                        <span>${item.question}</span>
+                        <span class="transform transition-transform duration-300 text-teal-500 text-xl font-bold">+</span>
+                    `;
+
+                    const answerDiv = document.createElement('div');
+                    answerDiv.className = 'faq-answer hidden';
+                    answerDiv.textContent = item.answer;
+
+                    faqItemDiv.appendChild(questionDiv);
+                    faqItemDiv.appendChild(answerDiv);
+                    faqAccordion.appendChild(faqItemDiv);
+
+                    questionDiv.addEventListener('click', () => {
+                        const icon = questionDiv.querySelector('span:last-child');
+                        const currentlyHidden = answerDiv.classList.contains('hidden');
+                        
+                        // Close all other open answers
+                        document.querySelectorAll('.faq-item .faq-answer:not(.hidden)').forEach(openAnswer => {
+                            if (openAnswer !== answerDiv) {
+                                openAnswer.classList.add('hidden');
+                                openAnswer.previousElementSibling.querySelector('span:last-child').textContent = '+';
+                            }
+                        });
+
+                        answerDiv.classList.toggle('hidden');
+                        icon.textContent = currentlyHidden ? '−' : '+';
+                    });
+                });
+            }
+            
+            // Set current year in footer
+            const currentYearSpan = document.getElementById('current-year');
+            if (currentYearSpan) {
+                currentYearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
+
